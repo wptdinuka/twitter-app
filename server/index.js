@@ -22,8 +22,10 @@ const streamURL =
   'https://api.twitter.com/2/tweets/search/stream?tweet.fields=public_metrics&expansions=author_id'
 
 const rules = [
+    { value: 'from:ufc OR from:TheNotoriousMMA -from:danawhite' },
+    { value: 'from:dc_mma OR from:BlessedMMA -from:stylebender' },
+    { value: '#ufc270 ' },
     { value: 'ufc' },
-    { value: 'conor macgregor' }
 ]
 
 // Get stream rules
